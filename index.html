@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sita Sites Distance Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+   
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"> Sita Sites Distance Calculator</a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="container-fluid raleway">
+    <div class="row">
+      <div class="col-md-12" style="padding: 0;">
+        <div class="map-position">
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <section id="locations">
+          <h3>Your Start And End Location</h3>
+          <div class="title-strips-over dark"></div>
+          <div class="form-group col-sm-12">
+            <label>
+              <i class="fa fa-play"></i> Start Location
+            </label>
+            <select class="form-select" aria-label="Default select example" id="start" type="text" class="form-control" required>
+              <option selected>Select Sita site</option>
+              <option value="-25.871159,28.193402 ">Centurion</option>
+              <option value="-25.737787,28.20532">Numerus</option>
+              <option value="-25.742459,28.188524">Beta</option>
+              <option value="-25.97855,28.1243">Midrand</option>
+              <option value="-26,161652,28,130679">Bedfordview</option>
+              <option value="-23.914874,29.452734">Polokwane</option>
+              <option value="-24.699229,28.408001">Modimolle</option>
+              <option value="-25.476344,30.974108">Nelspruit</option>
+              <option value="-25.766338,29.449387">Middleburg</option>
+              <option value="	-26.76326,27.117756">Potchefstroom</option>
+              <option value="-25.853937,25.6166">Mmabatho</option>
+              <option value="-29.11492,26.21295">Bloemfontein</option>
+              <option value="-27.97262,26.737">Welkom</option>
+              <option value="-28.734803,24.763089">Kimberley</option>
+              <option value="-28.445879,21.264818">Upington</option>
+              <option value="-33.934922,18.471764">Cape Town	</option>
+              <option value="-33.957094,22.450667">George</option>
+              <option value="-33.645477,19.443798">Worcester</option>
+              <option value="-33.9259,18.4197">Cape Town</option>
+              <option value="-33.960136,25.554387">Port Elizabeth</option>
+              <option value="-33.011297,27.917902">East London</option>
+              <option value="-32.8638,27.429256">Bhisho</option>
+              <option value="-31.587648,28.784212">Mthatha	</option>
+              <option value="-29.812801,31.002089">Durban</option>
+              <option value="-29.60937,30,37274">Pietermaritzburg</option>
+              <option value="-28.293316,31.422121">Ulundi</option>
+            </select>
+
+          </div>
+          <div class="form-group col-sm-12">
+            <label>
+              <i class="fa fa-stop"></i> End Location</label>
+              <select class="form-select" aria-label="Default select example" id="end" type="text" class="form-control" required>
+                <option selected>Select Sita site</option>
+                <option value="-25.871159,28.193402 ">Centurion</option>
+                <option value="-25.737787,28.20532">Numerus</option>
+                <option value="-25.742459,28.188524">Beta</option>
+                <option value="-25.97855,28.1243">Midrand</option>
+                <option value="-26,161652,28,130679">Bedfordview</option>
+                <option value="-23.914874,29.452734">Polokwane</option>
+                <option value="-24.699229,28.408001">Modimolle</option>
+                <option value="-25.476344,30.974108">Nelspruit</option>
+                <option value="-25.766338,29.449387">Middleburg</option>
+                <option value="	-26.76326,27.117756">Potchefstroom</option>
+                <option value="-25.853937,25.6166">Mmabatho</option>
+                <option value="-29.11492,26.21295">Bloemfontein</option>
+                <option value="-27.97262,26.737">Welkom</option>
+                <option value="-28.734803,24.763089">Kimberley</option>
+                <option value="-28.445879,21.264818">Upington</option>
+                <option value="-33.934922,18.471764">Cape Town	</option>
+                <option value="-33.957094,22.450667">George</option>
+                <option value="-33.645477,19.443798">Worcester</option>
+                <option value="-33.9259,18.4197">Cape Town</option>
+                <option value="-33.960136,25.554387">Port Elizabeth</option>
+                <option value="-33.011297,27.917902">East London</option>
+                <option value="-32.8638,27.429256">Bhisho</option>
+                <option value="-31.587648,28.784212">Mthatha	</option>
+                <option value="-29.812801,31.002089">Durban</option>
+                <option value="-29.60937,30,37274">Pietermaritzburg</option>
+                <option value="-28.293316,31.422121">Ulundi</option>
+              </select>
+          </div>
+          <section id="results">
+            <div id="warnings-panel"></div>
+            
+            <div id="total"></div>
+          </section>
+        </section>
+      
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Compiled and minified JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUxPIlsLZ-Qu1XUTTySWGthtw8nUJDq2g&callback=initMap"
+  type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCUxPIlsLZ-Qu1XUTTySWGthtw8nUJDq2g",
+      authDomain: "traveller-eca7b.firebaseapp.com",
+      databaseURL: "https://traveller-eca7b.firebaseio.com",
+      projectId: "traveller-eca7b",
+      storageBucket: "",
+      messagingSenderId: "553314801643"
+    };
+    firebase.initializeApp(config);
+  </script>
+</body>
+</html>
